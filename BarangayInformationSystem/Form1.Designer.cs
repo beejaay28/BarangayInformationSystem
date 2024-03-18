@@ -82,14 +82,14 @@
             // 
             // btn_Login
             // 
-            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(59)))), ((int)(((byte)(85)))));
             this.btn_Login.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Login.Location = new System.Drawing.Point(445, 286);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(104, 36);
             this.btn_Login.TabIndex = 4;
             this.btn_Login.Text = "Login";
-            this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.UseVisualStyleBackColor = true;
             this.btn_Login.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtTitle
@@ -104,10 +104,11 @@
             this.txtTitle.TabIndex = 5;
             this.txtTitle.Text = "Barangay Information System";
             this.txtTitle.Click += new System.EventHandler(this.txtTitle_Click);
+            
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(59)))), ((int)(((byte)(85)))));
             this.panel1.Controls.Add(this.brgyLogo);
             this.panel1.Controls.Add(this.txtTitle);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -135,7 +136,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(257, 35);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Login your account";
+            this.label3.Text = "Welcome To BrgyCode";
             // 
             // Form1
             // 
