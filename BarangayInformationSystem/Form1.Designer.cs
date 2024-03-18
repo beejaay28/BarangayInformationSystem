@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -36,8 +37,10 @@
             this.btn_Login = new System.Windows.Forms.Button();
             this.txtTitle = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.brgyLogo = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.brgyLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -95,20 +98,32 @@
             this.txtTitle.BackColor = System.Drawing.Color.Transparent;
             this.txtTitle.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtTitle.ForeColor = System.Drawing.Color.Transparent;
-            this.txtTitle.Location = new System.Drawing.Point(22, 29);
+            this.txtTitle.Location = new System.Drawing.Point(25, 201);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(330, 29);
             this.txtTitle.TabIndex = 5;
             this.txtTitle.Text = "Barangay Information System";
+            this.txtTitle.Click += new System.EventHandler(this.txtTitle_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.brgyLogo);
             this.panel1.Controls.Add(this.txtTitle);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(379, 451);
             this.panel1.TabIndex = 6;
+            // 
+            // brgyLogo
+            // 
+            this.brgyLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("brgyLogo.BackgroundImage")));
+            this.brgyLogo.Location = new System.Drawing.Point(107, 42);
+            this.brgyLogo.Name = "brgyLogo";
+            this.brgyLogo.Size = new System.Drawing.Size(128, 128);
+            this.brgyLogo.TabIndex = 6;
+            this.brgyLogo.TabStop = false;
+            this.brgyLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label3
             // 
@@ -138,6 +153,7 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.brgyLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +170,6 @@
         private Label txtTitle;
         private Panel panel1;
         private Label label3;
+        private PictureBox brgyLogo;
     }
 }

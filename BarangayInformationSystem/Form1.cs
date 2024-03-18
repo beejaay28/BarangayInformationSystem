@@ -26,5 +26,15 @@ namespace BarangayInformationSystem
                 MessageBox.Show("Invalid username or password. Please try again.");
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
