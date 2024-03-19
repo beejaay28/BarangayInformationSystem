@@ -36,5 +36,10 @@ namespace BarangayInformationSystem
         {
 
         }
+
+        private void txtPassword_TextChanged_1(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = true;
+        }
     }
 }
